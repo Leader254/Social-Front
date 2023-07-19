@@ -12,7 +12,7 @@ const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
 
     const toggleDropdown = () => {
-        setShowDropdown((prevState) => !prevState);
+        setShowDropdown(true);
     };
 
     const handleLogout = () => {
