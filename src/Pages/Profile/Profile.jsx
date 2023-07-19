@@ -8,6 +8,7 @@ import { BiSolidMessageRoundedDetail } from 'react-icons/bi'
 import { VscLocation } from 'react-icons/vsc'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import Posts from '../../Components/Posts/Posts'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
   return (

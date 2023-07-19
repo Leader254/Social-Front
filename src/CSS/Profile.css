@@ -95,6 +95,16 @@
     width: 50%;
 }
 
+.update {
+    background-color: #362f2f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 50%;
+}
+
 /* media queries */
 @media (max-width: 480px) {
     .profile-container .user-info {
