@@ -42,6 +42,7 @@ const LeftBar = () => {
                         <CgProfile className='icon' />
                         <span>Ruth Mwai</span>
                     </div>
+                    <hr />
                     <div className="item">
                         <RiLogoutCircleRLine className='icon' />
                         <span>Logout</span>
