@@ -10,18 +10,14 @@ const LeftBar = () => {
     return (
         <div className="leftbar">
             <div className="container1">
-
                 <div className="menu">
                     <div className="user">
                         <img src={currentuser.profilePic} alt="" />
                         <span>{currentuser.username}</span>
                     </div>
-                    <div className="menu">
-                        <span>Your Friends</span>
-                        <div className="item">
-                            <BiSolidMessageRoundedDetail className="icon" />
-                            <span>Messages</span>
-                        </div>
+                    <div className="item">
+                        <BiSolidMessageRoundedDetail className="icon" />
+                        <span>Messages</span>
                     </div>
                     <div className="item">
                         <span>Friends</span>
