@@ -1,5 +1,5 @@
 import Navbar from '../../Components/Navbar/Navbar'
-import '../../Css/Messenger.css'
+import './Messenger.css'
 import Conversation from '../../Components/Conversation/Conversation'
 import Message from '../Message/Message'
 import Online from '../Online/Online'
