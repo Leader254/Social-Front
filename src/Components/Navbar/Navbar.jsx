@@ -1,7 +1,6 @@
 import './Navbar.css';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import { BiSolidMessageRoundedDetail } from 'react-icons/bi';
-import { BsMoon } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { BiSearchAlt } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
@@ -10,9 +9,10 @@ import { AuthContext } from '../../Context/authContext';
 const Navbar = () => {
     const { currentuser } = useContext(AuthContext);
     const [showDropdown, setShowDropdown] = useState(false);
+    const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
-        setShowDropdown(true);
+        setShowDropdown((prevState) => !prevState);
     };
 
     const handleLogout = () => {
@@ -20,6 +20,20 @@ const Navbar = () => {
         // For this example, we'll just simulate a logout by refreshing the page.
         window.location.reload();
     };
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setShowDropdown(false);
+            }
+        };
+
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
 
     return (
         <div className='navbar'>
@@ -38,7 +52,7 @@ const Navbar = () => {
                         <BiSolidMessageRoundedDetail style={{ fontSize: '30px' }} />
                     </Link>
                     <FaBell style={{ fontSize: '30px' }} />
-                    <div className='user' onClick={toggleDropdown}>
+                    <div className='user' onClick={toggleDropdown} ref={dropdownRef}>
                         <img src={currentuser.profilePic} alt='' />
                         <span className='username'>{currentuser.username}</span>
                         {showDropdown && (
