@@ -1,4 +1,3 @@
-import { CgProfile } from "react-icons/fa";
 import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import '../../CSS/leftBar.css'
