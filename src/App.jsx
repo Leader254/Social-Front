@@ -7,8 +7,13 @@ import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
 import RightBar from './Components/rightBar/rightBar';
 import LeftBar from './Components/leftBar/leftBar';
+import { useContext } from 'react';
+import { AuthContext } from './Context/authContext';
+
 
 function App() {
+
+  const { currentuser } = useContext(AuthContext);
   const Layout = () => {
     return (
       <div className='theme-dark'>
