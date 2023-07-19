@@ -1,8 +1,8 @@
-import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Login from './Pages/Login/Login'
-import Register from './Pages/SignUp/SignUp'
-import { createBrowserRouter as Router, RouterProvider, Outlet } from 'react-router-dom';
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Login from './Pages/Login/Login';
+import Register from './Pages/SignUp/SignUp';
+import { createBrowserRouter as Router, RouterProvider, Outlet, Navigate } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
 import RightBar from './Components/rightBar/rightBar';
@@ -10,10 +10,9 @@ import LeftBar from './Components/leftBar/leftBar';
 import { useContext } from 'react';
 import { AuthContext } from './Context/authContext';
 
-
 function App() {
-
   const { currentuser } = useContext(AuthContext);
+
   const Layout = () => {
     return (
       <div className='theme-dark'>
@@ -26,8 +25,8 @@ function App() {
           <RightBar />
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   const router = Router([
     {
@@ -55,12 +54,10 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={router}>
-      <div className='app'>
-        <Outlet />
-      </div>
-    </RouterProvider>
-  )
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

@@ -20,7 +20,7 @@ const Login = () => {
             Then you are at the right place.
           </p>
           <span>
-            Don't have an account? <Link to="/home">Click here</Link> to explore.
+            Link to home <Link to="/">Click here</Link> to explore.
           </span>
           <Link to='/register'>
             <button className='registerbtn'>Sign Up</button>
