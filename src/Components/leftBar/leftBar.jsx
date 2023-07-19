@@ -19,13 +19,26 @@ const LeftBar = () => {
                     </div>
                     <div className="item">
                         <span>Friends</span>
+                    </div>
+                    <div className="item">
                         <FaUserFriends className='icon' />
+                        <span>Sam Kamotho</span>
+                    </div>
+                    <div className="item">
                         <FaUserFriends className='icon' />
+                        <span>Jane Doe</span>
+                    </div>
+                    <div className="item">
                         <FaUserFriends className='icon' />
+                        <span>Priscah P</span>
+                    </div>
+                    <div className="item">
                         <FaUserFriends className='icon' />
+                        <span>Grace Doe</span>
+                    </div>
+                    <div className="item">
                         <FaUserFriends className='icon' />
-                        <FaUserFriends className='icon' />
-                        <span>You have 6 Friends</span>
+                        <span>Ruth Mwai</span>
                     </div>
                 </div>
                 <hr />
