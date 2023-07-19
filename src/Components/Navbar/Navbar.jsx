@@ -38,7 +38,7 @@ const Navbar = () => {
                         <BiSolidMessageRoundedDetail style={{ fontSize: '30px' }} />
                     </Link>
                     <FaBell style={{ fontSize: '30px' }} />
-                    <div className='user' onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+                    <div className='user' onClick={toggleDropdown}>
                         <img src={currentuser.profilePic} alt='' />
                         <span className='username'>{currentuser.username}</span>
                         {showDropdown && (
