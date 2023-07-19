@@ -3,6 +3,7 @@ import { CgProfile } from "react-icons/cg";
 import '../../CSS/leftBar.css'
 import { useContext } from "react";
 import { AuthContext } from "../../Context/authContext";
+import { RiLogoutCircleRLine } from 'react-icons/ri'
 
 const LeftBar = () => {
     const { currentuser } = useContext(AuthContext);
@@ -40,6 +41,10 @@ const LeftBar = () => {
                     <div className="item">
                         <CgProfile className='icon' />
                         <span>Ruth Mwai</span>
+                    </div>
+                    <div className="item">
+                        <RiLogoutCircleRLine className='icon' />
+                        <span>Logout</span>
                     </div>
                 </div>
                 <hr />
