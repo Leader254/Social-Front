@@ -26,7 +26,9 @@ const Navbar = () => {
                 </div>
                 <div className="right">
                     <BsMoon style={{ fontSize: "30px" }} />
-                    <BiSolidMessageRoundedDetail style={{ fontSize: "30px" }} />
+                    <Link to='/messenger'>
+                        <BiSolidMessageRoundedDetail style={{ fontSize: "30px" }} />
+                    </Link>
                     <FaBell style={{ fontSize: "30px" }} />
                     <div className="user">
                         <img src={currentuser.profilePic} alt="" />

@@ -10,6 +10,7 @@ import RightBar from './Components/rightBar/rightBar';
 import LeftBar from './Components/leftBar/leftBar';
 import { useContext } from 'react';
 import { AuthContext } from './Context/authContext';
+import Messenger from './Pages/Messenger/Messenger'
 
 
 function App() {
@@ -66,6 +67,10 @@ function App() {
     {
       path: '/register',
       element: <Register />
+    },
+    {
+      path: '/messenger',
+      element: <Messenger />
     }
   ])
   return (
