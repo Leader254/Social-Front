@@ -2,7 +2,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { MdOutlineGroups } from "react-icons/md";
 // import { IoGameController } from 'react-icons/io'
 import { FaGamepad } from "react-icons/fa";
-import { BiSolidMessageDetail } from "react-icons/bi";
+import { CgProfile } from "react-icons/cg";
 import '../../CSS/leftBar.css'
 import { useContext } from "react";
 import { AuthContext } from "../../Context/authContext";
@@ -18,32 +18,21 @@ const LeftBar = () => {
                         <span>{currentuser.username}</span>
                     </div>
                     <div className="item">
-                        <FaUserFriends className='icon' />
                         <span>Friends</span>
-                    </div>
-                    <div className="item">
-                        <MdOutlineGroups className='icon' />
-                        <span>Groups</span>
-                    </div>
-                    <div className="item">
-                        {/* <IoGameController className='icon' /> */}
-                        <FaGamepad className='icon' />
-                        <span>Gaming Zone</span>
-                    </div>
-                    <div className="item">
                         <FaUserFriends className='icon' />
-                        <span>Friends</span>
-                    </div>
-                    <div className="item">
                         <FaUserFriends className='icon' />
-                        <span>Friends</span>
+                        <FaUserFriends className='icon' />
+                        <FaUserFriends className='icon' />
+                        <FaUserFriends className='icon' />
+                        <FaUserFriends className='icon' />
+                        <span>You have 6 Friends</span>
                     </div>
                 </div>
                 <hr />
                 <div className="menu">
-                    <span>Your Shortcuts</span>
+                    <span>Your Friends</span>
                     <div className="item">
-                        <BiSolidMessageDetail className="icon" />
+                        <CgProfile className="icon" />
                         <span>Messages</span>
                     </div>
                 </div>

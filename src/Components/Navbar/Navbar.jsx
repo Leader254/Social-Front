@@ -25,7 +25,6 @@ const Navbar = () => {
 
                 </div>
                 <div className="right">
-                    <BsMoon style={{ fontSize: "30px" }} />
                     <Link to='/messenger'>
                         <BiSolidMessageRoundedDetail style={{ fontSize: "30px" }} />
                     </Link>
