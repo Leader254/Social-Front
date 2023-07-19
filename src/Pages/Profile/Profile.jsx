@@ -9,8 +9,13 @@ import { VscLocation } from 'react-icons/vsc'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import Posts from '../../Components/Posts/Posts'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Update from '../../Components/Update/Update'
 
 const Profile = () => {
+
+  const [showUpdate, setShowUpdate] = useState(false)
+
   return (
     <div className='profile'>
       <div className="images">
@@ -46,7 +51,7 @@ const Profile = () => {
             </div>
             <div className="my-buttons">
               <button className='follow-profile'>Unfollow</button>
-              <button className="update">Update Profile</button>
+              <button className="update" onClick={() => setShowUpdate(true)}>Update Profile</button>
             </div>
           </div>
           <div className="right">
@@ -58,6 +63,7 @@ const Profile = () => {
         </div>
         <Posts />
       </div>
+      {showUpdate && <Update setOpenUpdate={setShowUpdate} />}
     </div>
   )
 }
