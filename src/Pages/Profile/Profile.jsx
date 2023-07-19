@@ -44,8 +44,10 @@ const Profile = () => {
                 <span style={{ fontSize: "15px" }}>Kenya</span>
               </div>
             </div>
-            <button className='follow-profile'>Unfollow</button>
-            <button className="update">Update Profile</button>
+            <div className="my-buttons">
+              <button className='follow-profile'>Unfollow</button>
+              <button className="update">Update Profile</button>
+            </div>
           </div>
           <div className="right">
             <Link to='/messenger'>

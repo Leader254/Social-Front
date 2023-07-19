@@ -105,6 +105,11 @@
     width: 50%;
 }
 
+.my-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 /* media queries */
 @media (max-width: 480px) {
     .profile-container .user-info {
