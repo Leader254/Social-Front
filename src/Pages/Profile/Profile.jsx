@@ -4,7 +4,7 @@ import { FaInstagram } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
-import { FiMail } from 'react-icons/fi'
+import { BiSolidMessageRoundedDetail } from 'react-icons/bi'
 import { VscLocation } from 'react-icons/vsc'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import Posts from '../../Components/Posts/Posts'
@@ -43,10 +43,13 @@ const Profile = () => {
                 <span style={{ fontSize: "15px" }}>Kenya</span>
               </div>
             </div>
-            <button className='follow-profile'>Follow</button>
+            <button className='follow-profile'>Unfollow</button>
+            <button className="update">Update Profile</button>
           </div>
           <div className="right">
-            <FiMail style={{ fontSize: "25px" }} />
+            <Link to='/messenger'>
+              <BiSolidMessageRoundedDetail style={{ fontSize: "30px" }} />
+            </Link>
             <FiMoreHorizontal style={{ fontSize: "25px" }} />
           </div>
         </div>
